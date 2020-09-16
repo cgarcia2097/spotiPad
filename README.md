@@ -8,9 +8,9 @@ The project consists of an Arduino sketch and a small Python script.
 
 The Arduino sketch sends a message over serial upon the depending on the button pressed. The sketch only supports momentary buttons at the moment.
 
-The script implements a serial driver, capturing serial messages from an Arduino and pressing a hotkey on the host PC. It is currently bound to Spotify shortcuts, however it is essentially a bonafide keyboard.
+The Python script implements a serial driver, capturing serial messages from an Arduino and pressing a hotkey on the host PC. It is currently bound to Spotify shortcuts, however it is considered a bonafide keyboard.
 
-**It is important that the messages match between the Arduino and the script, otherwise no interaaction will occur**
+**It is important that the messages match between the Arduino and the script, otherwise no interaction will occur.**
 
 ## Dependencies
 
@@ -26,12 +26,11 @@ The script implements a serial driver, capturing serial messages from an Arduino
 
 ## Usage
 
-- In the **CONTROL_SCHEMA** section of `spotiPad.ino`, change the button pinouts and the serial messages within the sketch as needed. When finished, flash the sketch into the Arduino 
-- In the **CONTROL_SCHEMA** section of `spotiPadDriver.py`, make sure that the serial messages match the messages sent by the Arduino, and set the appropriate keybinds 
+- In the **CONTROL_SCHEMA** section of `spotiPad.ino`, change the button pinouts and the serial messages within the sketch as needed. When finished, flash the sketch into the Arduino.
+- In the **CONTROL_SCHEMA** section of `spotiPadDriver.py`, make sure that the serial messages match the messages sent by the Arduino, and set the appropriate keybinds.
 - Run the script by typing:
   
-  **In Windows**
-
+  **In Windows** - 
     ```python .\spotiPadDriver.py YOUR_SERIAL_PORT YOUR_BAUDRATE```
 
   **In macOS/Linux**
@@ -43,6 +42,12 @@ The script implements a serial driver, capturing serial messages from an Arduino
 Curently, the message convention is very simple. It is your *MESSAGE* surrounded by triangular brackets:
 
 `<MESSAGE>`
+
+If you plan on using multiple words to convey your message, then it is seperated using the underscore character `'_'`, like so:
+
+`<MESSAGE_WITH_SPACES>`
+
+As always, make sure that the messages match between the Arduino and the script.
 
 ## Extra tips
 
