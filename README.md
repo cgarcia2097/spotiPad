@@ -10,6 +10,8 @@ The Arduino sketch sends a message over serial upon the depending on the button 
 
 The script implements a serial driver, capturing serial messages from an Arduino and pressing a hotkey on the host PC. It is currently bound to Spotify shortcuts, however it is essentially a bonafide keyboard.
 
+**It is important that the messages match between the Arduino and the script, otherwise no interaaction will occur**
+
 ## Dependencies
 
 ### Host PC
@@ -35,6 +37,12 @@ The script implements a serial driver, capturing serial messages from an Arduino
   **In macOS/Linux**
 
     ```python ./spotiPadDriver.py YOUR_SERIAL_PORT YOUR_BAUDRATE```
+
+## Message convention
+
+Curently, the message convention is very simple. It is your *MESSAGE* surrounded by triangular brackets:
+
+`<MESSAGE>`
 
 ## Extra tips
 
