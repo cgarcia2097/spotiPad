@@ -14,18 +14,18 @@ The script implements a serial driver, capturing serial messages from an Arduino
 
 ### Host PC
 - The [Arduino IDE](https://www.arduino.cc/en/main/software), plus the following libraries:
-  - `Bounce2` - [Library page](https://github.com/thomasfredericks/Bounce2)
+  - `Bounce2` - [**Bounce2** page](https://github.com/thomasfredericks/Bounce2)
 - A [Python 3+](https://www.python.org/downloads/) installation, with the following Python modules installed:
   - `keyboard` - [**keyboard** page](https://pypi.org/project/keyboard/)
   - `pyserial` - [**pyserial** page](https://pypi.org/project/pyserial/)
 
 ### Microcontroller
-- An Arduino (Uno, Mega, Nano, Duemilanove, etc.) attached to a host PC via USB cable or any other serial connection
+- An [Arduino (Uno, Mega, Nano, Duemilanove, etc.)](https://www.arduino.cc/en/Main/Products) attached to a host PC via USB cable or any other serial connection
 
 ## Usage
 
-- In `spotiPad.ino`, change the button pinouts and the serial messages within the sketch as needed. When finished, flash the sketch into the Arduino 
-- In `spotiPadDriver.py`, make sure that the serial messages match the messages sent by the Arduino, and set the appropriate keybinds within the `CONTROL_SCHEMA` section of the script
+- In the **CONTROL_SCHEMA** section `spotiPad.ino`, change the button pinouts and the serial messages within the sketch as needed. When finished, flash the sketch into the Arduino 
+- In the **CONTROL_SCHEMA** section of `spotiPadDriver.py`, make sure that the serial messages match the messages sent by the Arduino, and set the appropriate keybinds 
 - Run the script by typing:
   
   **In Windows**

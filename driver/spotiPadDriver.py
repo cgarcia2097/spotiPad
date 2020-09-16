@@ -1,6 +1,6 @@
 # File: driver.py
 # Date: Sept. 16, 2020
-# Author: @The_Gambler#1212
+# Author: @cgarcia2097
 #
 # Description:
 #   - Captures and processes serial messages from an Arduino
@@ -117,7 +117,7 @@ def appMainLoop():
         print ("Message: " + i + ", Keybind: " + myEventDict[i])
 
     # Read message from the Arduino
-    driverLog("Listening for new messages")
+    driverLog("\nListening for new messages")
     while(1):
         deviceMsg = deviceSerial.readline().decode('ascii')     # Read newline-terminated string
         newString = deviceMsg.replace("\r", "")                 # Process out the extra characters

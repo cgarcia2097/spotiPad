@@ -1,7 +1,7 @@
 /**
  * File: spotiPad.ino
  * Date: Sept. 15, 2020
- * Author: @The_Gambler#1212
+ * Author: @cgarcia2097
  * Description: Provides a button interface and message stack to the SpotiPad
  * 
  * Dependencies:
