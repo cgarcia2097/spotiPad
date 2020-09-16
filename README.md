@@ -6,7 +6,7 @@ Repository for the SpotiPad project.
 
 The project consists of an Arduino sketch and a small Python script. 
 
-The Arduino sketch sends a message over serial upon the depending on the button pressed.
+The Arduino sketch sends a message over serial upon the depending on the button pressed. The sketch is only supports momentary buttons at the moment, though that can be solved by pull requests to this repo.
 
 The script implements a serial driver, capturing serial messages from an Arduino and pressing a hotkey on the host PC. It is currently bound to Spotify shortcuts, however it is essentially a bonafide keyboard.
 
@@ -41,8 +41,8 @@ The script implements a serial driver, capturing serial messages from an Arduino
 The `pyserial` module allows one to search for serial port that is used by the Arduino. Assuming only one Arduino is plugged in, typing `python -m serial.tools.list_ports` should yield the Arduino's serial port.
 
 ## Future Work
-- Load control schema form JSON file
-- Pairwise generation of driver and firmware
+- Load control schema from CSV file
+- Pairwise generation of driver and firmware from CSV file
 
 ## Credits
 Charles Garcia - @cgarcia2097
