@@ -24,7 +24,7 @@ The script implements a serial driver, capturing serial messages from an Arduino
 
 ## Usage
 
-- In the **CONTROL_SCHEMA** of section `spotiPad.ino`, change the button pinouts and the serial messages within the sketch as needed. When finished, flash the sketch into the Arduino 
+- In the **CONTROL_SCHEMA** section of `spotiPad.ino`, change the button pinouts and the serial messages within the sketch as needed. When finished, flash the sketch into the Arduino 
 - In the **CONTROL_SCHEMA** section of `spotiPadDriver.py`, make sure that the serial messages match the messages sent by the Arduino, and set the appropriate keybinds 
 - Run the script by typing:
   
