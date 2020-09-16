@@ -54,7 +54,7 @@ byte buttonArray[NUM_KEYS] = {
   KEY_PIN_8
 };
 
-String mesgArray[NUM_KEYS] ={
+String mesgArray[NUM_KEYS] = {
   KEY_MSG_1 ,
   KEY_MSG_2 ,
   KEY_MSG_3 ,

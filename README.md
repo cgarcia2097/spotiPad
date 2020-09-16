@@ -30,12 +30,9 @@ The Python script implements a serial driver, capturing serial messages from an 
 - In the **CONTROL_SCHEMA** section of `spotiPadDriver.py`, make sure that the serial messages match the messages sent by the Arduino, and set the appropriate keybinds.
 - Run the script by typing:
   
-  **In Windows** - 
-    ```python .\spotiPadDriver.py YOUR_SERIAL_PORT YOUR_BAUDRATE```
+  **In Windows** - ```python .\spotiPadDriver.py YOUR_SERIAL_PORT YOUR_BAUDRATE```
 
-  **In macOS/Linux**
-
-    ```python ./spotiPadDriver.py YOUR_SERIAL_PORT YOUR_BAUDRATE```
+  **In macOS/Linux** - ```python ./spotiPadDriver.py YOUR_SERIAL_PORT YOUR_BAUDRATE```
 
 ## Message convention
 
